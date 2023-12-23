@@ -7,7 +7,7 @@ const UserList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://ap-southeast-1.aws.data.mongodb-api.com/app/data-oetyj/endpoint/getUserTest');
+        const response = await axios.get('http://192.168.1.207:3001/api/data');
         const decodedData = response.data.data.map(user => {
           const base64Data = user.body.Data;
           const decodedUserData = atob(base64Data);
