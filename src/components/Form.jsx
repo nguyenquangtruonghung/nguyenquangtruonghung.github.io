@@ -4,7 +4,7 @@ import validator from '@rjsf/validator-ajv8';
 import axios from 'axios'; 
 
 const schema = {
-  title: 'Đăng ký',
+  title: 'SIGN UP',
   type: 'object',
   required: ['username', 'password'],
   properties: {

@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header>
-         <h1>React App</h1>
+         <h1>REGISTRATION FORM</h1>
         <Form/>
         <UserList/>
       </header>
