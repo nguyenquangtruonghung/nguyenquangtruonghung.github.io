@@ -7,13 +7,8 @@ const UserList = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://ap-southeast-1.aws.data.mongodb-api.com/app/data-oetyj/endpoint/getUserTest');
-        const decodedData = response.data.data.map(user => {
-          const base64Data = user.body.Data;
-          const decodedUserData = atob(base64Data);
-          return JSON.parse(decodedUserData);
-        });
-        setUserData(decodedData);
+        const response = await axios.get('https://eastasia.azure.data.mongodb-api.com/app/application-0-hlnel/endpoint/getForm');
+        setUserData(response.data); // Trực tiếp sử dụng dữ liệu trả về
       } catch (error) {
         console.error('Lỗi khi lấy dữ liệu:', error);
       }
