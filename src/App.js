@@ -15,6 +15,7 @@ function App() {
 
 export default App; */
 
+// App.js
 import React, { useState } from 'react';
 import './App.css';
 import AuthPage from './components/AuthPage';
@@ -46,3 +47,4 @@ function App() {
 }
 
 export default App;
+
