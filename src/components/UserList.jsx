@@ -61,7 +61,7 @@ const DataTableFromAPI = () => {
               <tr key={index}>
                 <td>{index + 1}</td>
                 <td>{item.public.input.jsonData.desire}</td>
-                <td>{item.public.input.jsonData.distance}</td>
+                <td>{item.public.input.jsonData.actual}</td>
                 <td>{item.public.input.jsonInfo.time}</td>
               </tr>
             ))}
