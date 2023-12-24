@@ -8,8 +8,8 @@ const schema = {
   type: 'object',
   required: ['username', 'password'],
   properties: {
-    username: { type: 'string', title: 'Tài khoản' },
-    password: { type: 'string', title: 'Mật khẩu', format: 'password' },
+    username: { type: 'string', title: 'Username' },
+    password: { type: 'string', title: 'Password', format: 'password' },
   },
 };
 
