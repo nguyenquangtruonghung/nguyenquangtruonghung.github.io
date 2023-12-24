@@ -27,7 +27,7 @@ const TimeDisplay = () => {
   return (
     <div>
       <p style={{ fontSize: "1.2em" }}>
-        Thời gian hiện tại: {time.toLocaleTimeString()}
+      Current Time: {time.toLocaleTimeString()}
       </p>
     </div>
   );
