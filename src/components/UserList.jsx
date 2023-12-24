@@ -9,7 +9,7 @@ const DataTableFromAPI = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://us-east-1.aws.data.mongodb-api.com/app/agg_func-voayj/endpoint/getdata_forREACT"
+        "https://eastasia.azure.data.mongodb-api.com/app/application-0-hlnel/endpoint/getForm"
       );
       setData(response.data);
       setError(null);
@@ -50,13 +50,9 @@ const DataTableFromAPI = () => {
         >
           <thead>
             <tr>
-              <th>STT</th>
-              <th>Desire</th>
-              <th>Distance</th>
-              <th>Setpoint</th>
-              <th>Hall</th>
-              <th>Current</th>
-              <th>Last Balance</th>
+              <th>No.</th>
+              <th>Desired Speed</th>
+              <th>Actual Speed</th>
               <th>Time</th>
             </tr>
           </thead>
@@ -66,10 +62,6 @@ const DataTableFromAPI = () => {
                 <td>{index + 1}</td>
                 <td>{item.public.input.jsonData.desire}</td>
                 <td>{item.public.input.jsonData.distance}</td>
-                <td>{item.public.output.jsonData.setpoint}</td>
-                <td>{item.public.input.jsonData.hall}</td>
-                <td>{item.public.output.jsonData.current}</td>
-                <td>{item.public.input.jsonData.last_balance}</td>
                 <td>{item.public.input.jsonInfo.time}</td>
               </tr>
             ))}
