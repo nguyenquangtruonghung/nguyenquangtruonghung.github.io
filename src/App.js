@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <header>
-         <h1>REGISTRATION FORM</h1>
+         <h1>SINGLE CYLINDER SOLENOID ENGINE</h1>
         <Form/>
         <UserList/>
       </header>

@@ -5,11 +5,11 @@ import axios from "axios";
 import "./UserLogin.css"; // Import file CSS tùy chỉnh
 
 const schema = {
-  title: "NHẬP THÔNG TIN ĐIỀU KHIỂN HỆ THỐNG",
+  title: "ENGINE CONTROL INFORMATION",
   type: "object",
   required: ["desire"],
   properties: {
-    desire: { type: "number", title: "Nhập khoảng cách mong muốn (mm)" },
+    desire: { type: "number", title: "Enter the desired engine control speed (RPM)" },
   },
 };
 
