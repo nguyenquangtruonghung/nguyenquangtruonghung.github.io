@@ -41,34 +41,17 @@ const DataTableFromAPI = () => {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <table
-          style={{
-            width: "100%",
-            borderCollapse: "collapse",
-            marginTop: "10px",
-          }}
-        >
-          <thead>
-            <tr>
-              <th>No.</th>
-              <th>Desired Speed</th>
-              <th>Timestamp</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((item, index) => (
-              <tr key={index}>
-                <td>{index + 1}</td>
-                <td>{item.public.input.jsonData.desire}</td>
-                <td>{item.public.input.jsonInfo.time}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <ul>
+        {userData.map((user, index) => (
+          <li key={index}>
+            Desired Speed: {user.desire}, Timestamp: {user.time}
+          </li>
+        ))}
+      </ul>
       )}
       {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
-  );  
+  );
 };
 
 export default DataTableFromAPI;
