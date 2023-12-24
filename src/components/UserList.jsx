@@ -32,26 +32,41 @@ const DataTableFromAPI = () => {
 
   return (
     <div>
-      <h2>Danh sách người dùng:</h2>
-      <h5>(Refresh để cập nhật)</h5>
-      <table>
-        <thead>
-          <tr>
-            <th>Số Thứ Tự</th>
-            <th>Tên Người Dùng</th>
-            <th>Mật Khẩu</th>
-          </tr>
-        </thead>
-        <tbody>
-          {userData.map((user, index) => (
-            <tr key={index}>
-              <td>{index + 1}</td>
-              <td>{user.username}</td>
-              <td>{user.password}</td>
+      <h2 style={{ fontSize: "1.5em" }}>DATA LIST</h2>
+      <div style={{ marginBottom: "10px" }}>
+        <button onClick={handleRefresh} disabled={loading}>
+          {loading ? "Refreshing..." : "Refresh"}
+        </button>
+      </div>
+      {loading ? (
+        <p>Loading...</p>
+      ) : (
+        <table
+          style={{
+            width: "100%",
+            borderCollapse: "collapse",
+            marginTop: "10px",
+          }}
+        >
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Desired Speed</th>
+              <th>Timestamp</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {data.map((item, index) => (
+              <tr key={index}>
+                <td>{index + 1}</td>
+                <td>{item.public.input.jsonData.desire}</td>
+                <td>{item.public.input.jsonInfo.time}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+      {error && <p style={{ color: "red" }}>{error}</p>}
     </div>
   );  
 };
