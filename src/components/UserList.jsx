@@ -42,7 +42,7 @@ const DataTableFromAPI = () => {
         <p>Loading...</p>
       ) : (
         <ul>
-        {userData.map((user, index) => (
+        {data.map((user, index) => (
           <li key={index}>
             Desired Speed: {user.desire}, Timestamp: {user.time}
           </li>
