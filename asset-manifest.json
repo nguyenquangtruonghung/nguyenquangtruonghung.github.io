@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-form-test/static/css/main.84752051.css",
+    "main.css": "/react-form-test/static/css/main.38fb7680.css",
     "main.js": "/react-form-test/static/js/main.2f0e6694.js",
     "static/js/787.3bf0dcc2.chunk.js": "/react-form-test/static/js/787.3bf0dcc2.chunk.js",
-    "static/media/maxresdefault.jpg": "/react-form-test/static/media/maxresdefault.4d84fff86a155fad665a.jpg",
+    "static/media/information-technology-nucb4z97b3q78mjk.jpg": "/react-form-test/static/media/information-technology-nucb4z97b3q78mjk.9c7de7efe318d78fae84.jpg",
     "index.html": "/react-form-test/index.html",
-    "main.84752051.css.map": "/react-form-test/static/css/main.84752051.css.map",
+    "main.38fb7680.css.map": "/react-form-test/static/css/main.38fb7680.css.map",
     "main.2f0e6694.js.map": "/react-form-test/static/js/main.2f0e6694.js.map",
     "787.3bf0dcc2.chunk.js.map": "/react-form-test/static/js/787.3bf0dcc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84752051.css",
+    "static/css/main.38fb7680.css",
     "static/js/main.2f0e6694.js"
   ]
 }
