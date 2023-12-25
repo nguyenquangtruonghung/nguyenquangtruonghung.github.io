@@ -9,7 +9,7 @@ const DataTableFromAPI = () => {
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        "https://eastasia.azure.data.mongodb-api.com/app/application-0-hlnel/endpoint/getData"
+        "https://eastasia.azure.data.mongodb-api.com/app/application-0-hlnel/endpoint/getForm"
       );
       setData(response.data);
       setError(null);
