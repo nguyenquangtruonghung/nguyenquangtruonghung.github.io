@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/react-form-test/static/css/main.80c00263.css",
-    "main.js": "/react-form-test/static/js/main.ae9c13e7.js",
+    "main.css": "/react-form-test/static/css/main.84752051.css",
+    "main.js": "/react-form-test/static/js/main.2f0e6694.js",
     "static/js/787.3bf0dcc2.chunk.js": "/react-form-test/static/js/787.3bf0dcc2.chunk.js",
+    "static/media/maxresdefault.jpg": "/react-form-test/static/media/maxresdefault.4d84fff86a155fad665a.jpg",
     "index.html": "/react-form-test/index.html",
-    "main.80c00263.css.map": "/react-form-test/static/css/main.80c00263.css.map",
-    "main.ae9c13e7.js.map": "/react-form-test/static/js/main.ae9c13e7.js.map",
+    "main.84752051.css.map": "/react-form-test/static/css/main.84752051.css.map",
+    "main.2f0e6694.js.map": "/react-form-test/static/js/main.2f0e6694.js.map",
     "787.3bf0dcc2.chunk.js.map": "/react-form-test/static/js/787.3bf0dcc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.80c00263.css",
-    "static/js/main.ae9c13e7.js"
+    "static/css/main.84752051.css",
+    "static/js/main.2f0e6694.js"
   ]
 }
