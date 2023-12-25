@@ -1,13 +1,13 @@
-import './App.css';
-import Form from './components/Form';
-import UserList from './components/UserList';
+import "./App.css";
+import Form from "./components/Form";
+import UserList from "./components/UserList";
 function App() {
   return (
     <div className="App">
       <header>
-         <h1>SINGLE CYLINDER SOLENOID ENGINE</h1>
-        <Form/>
-        <UserList/>
+        <h1>Magnetic Levitation</h1>
+        <Form />
+        <UserList />
       </header>
     </div>
   );
