@@ -10,7 +10,7 @@ const schema = {
   required: ["desire"],
   properties: {
     desire: { type: "number", 
-    title: "Enter the desired speed (RPM)" },
+    title: "Enter Desired Engine Speed (RPM)" },
   },
 };
 
@@ -28,7 +28,7 @@ const TimeDisplay = () => {
   return (
     <div>
       <p style={{ fontSize: "1.2em" }}>
-        Current time: {time.toLocaleTimeString()}
+        Current Time: {time.toLocaleTimeString()}
       </p>
     </div>
   );
