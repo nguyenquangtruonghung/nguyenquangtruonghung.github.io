@@ -6,11 +6,11 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h1>Magnetic Levitation</h1>
+        <h1 className="app-title">CYLINDER SOLENOID ENGINE</h1>
       </header>
       <div className="form-container">
-            <Form />
-            <UserList />
+        <Form />
+        <UserList />
       </div>
     </div>
   );
