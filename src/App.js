@@ -6,9 +6,13 @@ function App() {
     <div className="App">
       <header>
         <h1>CYLINDER SOLENOID ENGINE</h1>
-        <Form />
-        <UserList />
+{/*         <Form />
+        <UserList /> */}
       </header>
+      <div className="form-container">
+            <Form />
+            <UserList />
+      </div>
     </div>
   );
 }
