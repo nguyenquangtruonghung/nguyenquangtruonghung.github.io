@@ -32,7 +32,7 @@ const DataTableFromAPI = () => {
 
   return (
     <div>
-      <h2 style={{ fontSize: "1.5em" }}>DANH SÁCH DỮ LIỆU</h2>
+      <h2 style={{ fontSize: "1.5em" }}>DATA LIST</h2>
       <div style={{ marginBottom: "10px" }}>
         <button onClick={handleRefresh} disabled={loading}>
           {loading ? "Refreshing..." : "Refresh"}
@@ -50,14 +50,14 @@ const DataTableFromAPI = () => {
         >
           <thead>
             <tr>
-              <th>STT</th>
+              <th>No.</th>
               <th>Desire</th>
               <th>Distance</th>
               <th>Setpoint</th>
               <th>Hall</th>
               <th>Current</th>
               <th>Last Balance</th>
-              <th>Time</th>
+              <th>Timestamp</th>
             </tr>
           </thead>
           <tbody>
