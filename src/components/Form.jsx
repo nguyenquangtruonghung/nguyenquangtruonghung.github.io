@@ -5,11 +5,11 @@ import axios from "axios";
 import "./UserLogin.css"; // Import file CSS tùy chỉnh
 
 const schema = {
-  title: "ENGINE CONTROL INFORMATION",
+  title: "NHẬP THÔNG TIN ĐIỀU KHIỂN HỆ THỐNG",
   type: "object",
   required: ["desire"],
   properties: {
-    desire: { type: "number", title: "Enter the desired engine control speed (RPM)" },
+    desire: { type: "number", title: "Nhập khoảng cách mong muốn (mm)" },
   },
 };
 
@@ -27,7 +27,7 @@ const TimeDisplay = () => {
   return (
     <div>
       <p style={{ fontSize: "1.2em" }}>
-      Current Time: {time.toLocaleTimeString()}
+        Thời gian hiện tại: {time.toLocaleTimeString()}
       </p>
     </div>
   );
