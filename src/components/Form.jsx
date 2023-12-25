@@ -2,14 +2,15 @@ import React, { useState, useEffect } from "react";
 import Form from "@rjsf/core";
 import validator from "@rjsf/validator-ajv8";
 import axios from "axios";
-import "./UserLogin.css"; // Import file CSS tùy chỉnh
+import "./UserLogin.css";
 
 const schema = {
-  title: "NHẬP THÔNG TIN ĐIỀU KHIỂN HỆ THỐNG",
+  title: "ENGINE CONTROL INFORMATION",
   type: "object",
   required: ["desire"],
   properties: {
-    desire: { type: "number", title: "Nhập khoảng cách mong muốn (mm)" },
+    desire: { type: "number", 
+    title: "Enter the desired speed (RPM)" },
   },
 };
 
