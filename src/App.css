@@ -1,12 +1,18 @@
-/* App.css */
 .App {
   text-align: center;
+  margin: 0; /* Loại bỏ khoảng cách lề ngoại vi */
+  padding: 0; /* Loại bỏ đệm ngoại vi */
+  box-sizing: border-box; /* Đảm bảo đệm và viền nằm bên trong chiều rộng */
 }
 
 header {
   background-color: #d20c0c;
   padding: 20px;
+  width: 100%; /* Chiều rộng chiếm toàn bộ màn hình */
+  margin: 0; /* Loại bỏ khoảng cách lề */
+  box-sizing: border-box; /* Đảm bảo đệm và viền nằm bên trong chiều rộng */
 }
+
 
 h1.app-title {
   color: #0004df;
@@ -20,8 +26,8 @@ main {
 }
 
 .form-container{
-  width: 97.4%;
-  height: 46vh;
+  width: 100%;
+  height: 47vh;
   padding: 20px;
   background-color: #f0f0f0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -29,4 +35,8 @@ main {
   background-position: center;
   transition: transform 0.3s, opacity 0.3s;
   background-image: url('/public/information-technology-nucb4z97b3q78mjk.jpg');
+}
+
+.App, .form-container, header {
+  box-sizing: border-box; /* Đảm bảo đệm và viền nằm bên trong chiều rộng */
 }

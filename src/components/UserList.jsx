@@ -32,49 +32,45 @@ const DataTableFromAPI = () => {
 
   return (
     <div>
-      <h2 style={{ fontSize: "1.5em" }}>DATA LIST</h2>
-      <div style={{ marginBottom: "10px" }}>
+      <h2>DATA LIST</h2>
+      <div>
         <button onClick={handleRefresh} disabled={loading}>
-          {loading ? "Refreshing..." : "Refresh"}
+          {loading ? 'Refreshing...' : 'Refresh'}
         </button>
       </div>
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <table
-          style={{
-            width: "100%",
-            borderCollapse: "collapse",
-            marginTop: "10px",
-          }}
-        >
-          <thead>
-            <tr>
-              <th>No.</th>
-              <th>Desired Speed</th>
-              <th>Target Distance</th>
-              <th>Distance Count</th>
-              <th>Delay Microseconds</th>
-              <th>Setpoint</th>
-              <th>Timestamp</th>
-            </tr>
-          </thead>
-          <tbody>
-            {data.map((item, index) => (
-              <tr key={index}>
-                <td>{index + 1}</td>
-                <td>{item.public.input.jsonData.desire}</td>
-                <td>{item.public.input.jsonData.distance}</td>
-                <td>{item.public.input.jsonData.last_balance}</td>
-                <td>{item.public.output.jsonData.current}</td>
-                <td>{item.public.output.jsonData.setpoint}</td>
-                <td>{item.public.input.jsonInfo.time}</td>
+        <div className="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Desired Speed</th>
+                <th>Target Distance</th>
+                <th>Distance Count</th>
+                <th>Delay Microseconds</th>
+                <th>Setpoint</th>
+                <th>Timestamp</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {data.map((item, index) => (
+                <tr key={index}>
+                  <td>{index + 1}</td>
+                  <td>{item.public.input.jsonData.desire}</td>
+                  <td>{item.public.input.jsonData.distance}</td>
+                  <td>{item.public.input.jsonData.last_balance}</td>
+                  <td>{item.public.output.jsonData.current}</td>
+                  <td>{item.public.output.jsonData.setpoint}</td>
+                  <td>{item.public.input.jsonInfo.time}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p>{error}</p>}
     </div>
   );
 };
