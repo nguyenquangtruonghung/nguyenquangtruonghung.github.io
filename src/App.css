@@ -19,22 +19,14 @@ main {
   margin-top: 20px;
 }
 
-
-
-
-
-
-
-
 .form-container{
-  width: 97.5%;
-  height: 2000;
+  width: 97.4%;
+  height: 46vh;
   padding: 20px;
   background-color: #f0f0f0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: center;
-  position: relative;
   transition: transform 0.3s, opacity 0.3s;
   background-image: url('/public/information-technology-nucb4z97b3q78mjk.jpg');
 }

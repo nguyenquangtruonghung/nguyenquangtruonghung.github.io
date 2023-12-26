@@ -3,6 +3,7 @@ import Form from "@rjsf/core";
 import validator from "@rjsf/validator-ajv8";
 import axios from "axios";
 import "./UserLogin.css";
+import "./Form.css"
 
 const schema = {
   title: "ENGINE CONTROL INFORMATION",

@@ -10,6 +10,8 @@ function App() {
       </header>
       <div className="form-container">
         <Form />
+      </div>
+      <div className="user-list-container">
         <UserList />
       </div>
     </div>
