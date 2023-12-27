@@ -32,12 +32,13 @@ const DataTableFromAPI = () => {
 
   return (
     <div>
-      <h2>DATA LIST</h2>
+      <h2>DATA LIST
       <div>
         <button onClick={handleRefresh} disabled={loading}>
           {loading ? 'Refreshing...' : 'Refresh'}
         </button>
       </div>
+      </h2>
       {loading ? (
         <p>Loading...</p>
       ) : (

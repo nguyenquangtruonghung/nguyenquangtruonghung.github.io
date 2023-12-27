@@ -8,6 +8,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  font-weight: bold;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 5px;
@@ -17,11 +18,15 @@ button {
 /* Header styling */
 h2 {
   font-size: 1.5em;
-  margin-bottom: 10px;
   color: #333;
   font-weight: bold;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
-
 
 button:hover {
   background-color: #45a049;
@@ -55,8 +60,17 @@ th {
   color: white;
 }
 
-tr:nth-child(even) {
-  background-color: #f2f2f2;
+td {
+  background-color: white; /* Thêm màu nền trắng cho các ô dữ liệu */
+}
+
+/* Table cell styling */
+td:nth-child(odd) {
+  background-color: #f2f2f2; /* Màu xen kẽ cho các cột giá trị lẻ */
+}
+
+td:nth-child(even) {
+  background-color: #ffffff; /* Màu xen kẽ cho các cột giá trị chẵn */
 }
 
 /* Responsive table */

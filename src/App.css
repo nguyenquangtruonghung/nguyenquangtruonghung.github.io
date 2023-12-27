@@ -1,21 +1,34 @@
 .App {
   text-align: center;
-  margin: 0; /* Loại bỏ khoảng cách lề ngoại vi */
-  padding: 0; /* Loại bỏ đệm ngoại vi */
-  box-sizing: border-box; /* Đảm bảo đệm và viền nằm bên trong chiều rộng */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 header {
-  background-color: #d20c0c;
-  padding: 20px;
-  width: 100%; /* Chiều rộng chiếm toàn bộ màn hình */
-  margin: 0; /* Loại bỏ khoảng cách lề */
-  box-sizing: border-box; /* Đảm bảo đệm và viền nằm bên trong chiều rộng */
+  background-color: #45a049;
+  padding: 3px;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: relative;
 }
 
+.logo {
+  background-image: url('/public/TDT.png'); /* Đường dẫn đến hình ảnh logo */
+  background-repeat: no-repeat; /* Ngăn lặp lại hình ảnh */
+  background-size: contain; /* Kích thước của hình ảnh sẽ được thay đổi để vừa với kích thước của phần tử */
+  width: 100px; /* Kích thước của logo */
+  height: 100px;
+  position: absolute; /* Sử dụng position tuyệt đối để đặt vị trí cố định */
+  top:17px;
+  left: 30px; /* Khoảng cách từ logo đến bên trái header */
+}
 
 h1.app-title {
-  color: #0004df;
+  color: white;
 }
 
 main {
@@ -25,18 +38,22 @@ main {
   margin-top: 20px;
 }
 
-.form-container{
+.form-container, .user-list-container {
   width: 100%;
-  height: 46vh;
+  height: 87.3vh;
   padding: 20px;
   background-color: #f0f0f0;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: center;
   transition: transform 0.3s, opacity 0.3s;
-  background-image: url('/public/information-technology-nucb4z97b3q78mjk.jpg');
+  background-image: url('/public/digital-technology-background.jpg');
+  margin-top: 1px;
+  /* border-radius: 15px; */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
-.App, .form-container, header {
-  box-sizing: border-box; /* Đảm bảo đệm và viền nằm bên trong chiều rộng */
+.App, .form-container, header, .user-list-container {
+  box-sizing: border-box;
 }

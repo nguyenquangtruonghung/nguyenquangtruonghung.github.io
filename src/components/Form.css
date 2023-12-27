@@ -9,8 +9,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: auto;
-    margin-top: 20px; /* Adjust this value as needed */
-    font-family: 'Arial', sans-serif;
+    margin-top: 8px; /* Adjust this value as needed */
 }
 
   
@@ -30,7 +29,7 @@
     color: #333;
     font-weight: bold;
   }
-  
+
   label {
     display: block;
     margin-bottom: 5px;
