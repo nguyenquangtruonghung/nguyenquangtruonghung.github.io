@@ -50,7 +50,9 @@ const DataTableFromAPI = () => {
                 <th>Target Distance</th>
                 <th>Distance Count</th>
                 <th>Delay Microseconds</th>
-                <th>Setpoint</th>
+                <th>Timer</th>
+                <th>Actual Speed</th>
+                <th>Error</th>
                 <th>Timestamp</th>
               </tr>
             </thead>
@@ -60,9 +62,11 @@ const DataTableFromAPI = () => {
                   <td>{index + 1}</td>
                   <td>{item.public.input.jsonData.desire}</td>
                   <td>{item.public.input.jsonData.distance}</td>
-                  <td>{item.public.input.jsonData.last_balance}</td>
-                  <td>{item.public.output.jsonData.current}</td>
-                  <td>{item.public.output.jsonData.setpoint}</td>
+                  <td>{item.public.input.jsonData.count}</td>
+                  <td>{item.public.input.jsonData.delaymicroseconds}</td>
+                  <td>{item.public.input.jsonData.timer}</td>
+                  <td>{item.public.output.jsonData.actual}</td>
+                  <td>{item.public.output.jsonData.error}</td>
                   <td>{item.public.input.jsonInfo.time}</td>
                 </tr>
               ))}
