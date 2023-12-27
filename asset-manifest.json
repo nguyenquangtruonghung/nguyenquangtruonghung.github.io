@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/react-form-test/static/css/main.550c2183.css",
-    "main.js": "/react-form-test/static/js/main.226e48ae.js",
+    "main.css": "/react-form-test/static/css/main.deda49cf.css",
+    "main.js": "/react-form-test/static/js/main.b68f9026.js",
     "static/js/787.3bf0dcc2.chunk.js": "/react-form-test/static/js/787.3bf0dcc2.chunk.js",
-    "static/media/information-technology-nucb4z97b3q78mjk.jpg": "/react-form-test/static/media/information-technology-nucb4z97b3q78mjk.9c7de7efe318d78fae84.jpg",
+    "static/media/digital-technology-background.jpg": "/react-form-test/static/media/digital-technology-background.a18691657373410fe7f0.jpg",
+    "static/media/TDT.png": "/react-form-test/static/media/TDT.353c28dced298b9c2996.png",
     "index.html": "/react-form-test/index.html",
-    "main.550c2183.css.map": "/react-form-test/static/css/main.550c2183.css.map",
-    "main.226e48ae.js.map": "/react-form-test/static/js/main.226e48ae.js.map",
+    "main.deda49cf.css.map": "/react-form-test/static/css/main.deda49cf.css.map",
+    "main.b68f9026.js.map": "/react-form-test/static/js/main.b68f9026.js.map",
     "787.3bf0dcc2.chunk.js.map": "/react-form-test/static/js/787.3bf0dcc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.550c2183.css",
-    "static/js/main.226e48ae.js"
+    "static/css/main.deda49cf.css",
+    "static/js/main.b68f9026.js"
   ]
 }
