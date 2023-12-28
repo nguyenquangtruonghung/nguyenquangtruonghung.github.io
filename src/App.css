@@ -27,6 +27,13 @@ header {
   left: 30px; /* Khoảng cách từ logo đến bên trái header */
 }
 
+/* CSS cho điện thoại di động */
+@media (max-width: 768px) {
+  .logo {
+    display: none; /* Ẩn logo trên điện thoại di động */
+  }
+}
+
 h1.app-title {
   color: white;
 }
