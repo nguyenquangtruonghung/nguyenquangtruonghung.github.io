@@ -47,13 +47,11 @@ const DataTableFromAPI = () => {
             <thead>
               <tr>
                 <th>No.</th>
-                <th>Desired Speed</th>
-                <th>Target Distance</th>
-                <th>Distance Count</th>
-                <th>Delay Microseconds</th>
-                <th>Timer</th>
-                <th>Actual Speed</th>
+                <th>Setpoint</th>
                 <th>Error</th>
+                <th>Integral</th>
+                <th>Derivative</th>
+                <th>Control Value</th>
                 <th>Timestamp</th>
               </tr>
             </thead>
@@ -61,13 +59,11 @@ const DataTableFromAPI = () => {
               {data.map((item, index) => (
                 <tr key={index}>
                   <td>{index + 1}</td>
-                  <td>{item.public.input.jsonData.desire}</td>
-                  <td>{item.public.input.jsonData.distance}</td>
-                  <td>{item.public.input.jsonData.count}</td>
-                  <td>{item.public.input.jsonData.delaymicroseconds}</td>
-                  <td>{item.public.input.jsonData.timer}</td>
-                  <td>{item.public.output.jsonData.actual}</td>
-                  <td>{item.public.output.jsonData.error}</td>
+                  <td>{item.public.input.jsonData.setpoint}</td>
+                  <td>{item.public.output.jsonData.e_t}</td>
+                  <td>{item.public.output.jsonData.integral}</td>
+                  <td>{item.public.output.jsonData.derivative}</td>
+                  <td>{item.public.output.jsonData.controlValue}</td>
                   <td>{item.public.input.jsonInfo.time}</td>
                 </tr>
               ))}
