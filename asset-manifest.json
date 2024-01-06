@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-form-test/static/css/main.19d1157b.css",
-    "main.js": "/react-form-test/static/js/main.67291aef.js",
+    "main.js": "/react-form-test/static/js/main.343918c4.js",
     "static/js/787.3bf0dcc2.chunk.js": "/react-form-test/static/js/787.3bf0dcc2.chunk.js",
     "static/media/digital-technology-background.jpg": "/react-form-test/static/media/digital-technology-background.a18691657373410fe7f0.jpg",
     "static/media/TDT.png": "/react-form-test/static/media/TDT.353c28dced298b9c2996.png",
     "index.html": "/react-form-test/index.html",
     "main.19d1157b.css.map": "/react-form-test/static/css/main.19d1157b.css.map",
-    "main.67291aef.js.map": "/react-form-test/static/js/main.67291aef.js.map",
+    "main.343918c4.js.map": "/react-form-test/static/js/main.343918c4.js.map",
     "787.3bf0dcc2.chunk.js.map": "/react-form-test/static/js/787.3bf0dcc2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.19d1157b.css",
-    "static/js/main.67291aef.js"
+    "static/js/main.343918c4.js"
   ]
 }
