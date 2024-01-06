@@ -8,9 +8,9 @@ import "./Form.css"
 const schema = {
   title: "ENGINE CONTROL INFORMATION",
   type: "object",
-  required: ["desire"],
+  required: ["setpoint"],
   properties: {
-    desire: { type: "number", 
+    setpoint: { type: "number", 
     title: "Enter Desired Engine Speed (RPM)" },
   },
 };
