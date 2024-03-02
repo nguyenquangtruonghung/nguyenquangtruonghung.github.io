@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/react-form-test/static/css/main.19d1157b.css",
-    "main.js": "/react-form-test/static/js/main.343918c4.js",
+    "main.css": "/react-form-test/static/css/main.c2600591.css",
+    "main.js": "/react-form-test/static/js/main.2d97659e.js",
     "static/js/787.3bf0dcc2.chunk.js": "/react-form-test/static/js/787.3bf0dcc2.chunk.js",
     "static/media/digital-technology-background.jpg": "/react-form-test/static/media/digital-technology-background.a18691657373410fe7f0.jpg",
+    "static/media/avatar.jpg": "/react-form-test/static/media/avatar.663a32c2b78f044c0285.jpg",
     "static/media/TDT.png": "/react-form-test/static/media/TDT.353c28dced298b9c2996.png",
     "index.html": "/react-form-test/index.html",
-    "main.19d1157b.css.map": "/react-form-test/static/css/main.19d1157b.css.map",
-    "main.343918c4.js.map": "/react-form-test/static/js/main.343918c4.js.map",
+    "main.c2600591.css.map": "/react-form-test/static/css/main.c2600591.css.map",
+    "main.2d97659e.js.map": "/react-form-test/static/js/main.2d97659e.js.map",
     "787.3bf0dcc2.chunk.js.map": "/react-form-test/static/js/787.3bf0dcc2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.19d1157b.css",
-    "static/js/main.343918c4.js"
+    "static/css/main.c2600591.css",
+    "static/js/main.2d97659e.js"
   ]
 }
