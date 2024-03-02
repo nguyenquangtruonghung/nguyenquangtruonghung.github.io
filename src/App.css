@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: margin-left 0.3s;
+}
+
+.menu-open {
+  margin-left: 250px; /* Độ rộng của sidebar */
 }
 
 header {
@@ -11,8 +16,8 @@ header {
   width: 100%;
   margin: 0;
   box-sizing: border-box;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  
+  
   position: relative;
 }
 
@@ -23,8 +28,8 @@ header {
   width: 100px; /* Kích thước của logo */
   height: 100px;
   position: absolute; /* Sử dụng position tuyệt đối để đặt vị trí cố định */
-  top:17px;
-  left: 30px; /* Khoảng cách từ logo đến bên trái header */
+  top: 17px;
+  right: 42px; /* Khoảng cách từ logo đến bên trái header */
 }
 
 /* CSS cho điện thoại di động */
@@ -57,10 +62,166 @@ main {
   background-image: url('/public/digital-technology-background.jpg');
   margin-top: 1px;
   /* border-radius: 15px; */
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  
+  
 }
 
 .App, .form-container, header, .user-list-container {
   box-sizing: border-box;
+}
+
+/* CSS cho thanh menu */
+.menu-icon {
+  font-size: 28px; /* Kích thước của biểu tượng menu */
+  color: white; /* Màu sắc của biểu tượng menu */
+  padding: 14px;
+  position: absolute; /* Sử dụng position tuyệt đối để đặt vị trí cố định */
+  top: 15px;
+  left: 32px; /* Khoảng cách từ thanh menu đến bên trái header */
+  cursor: pointer; /* Đổi con trỏ chuột khi rê chuột vào thanh menu */
+}
+
+.menu-line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff; /* Màu sắc của menu icon */
+  margin: 3px 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* CSS cho side menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  transition: left 0.3s ease;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu li:hover {
+  background-color: #555;
+}
+
+.side-menu.open {
+  left: 0;
+}
+.page-container.hidden {
+  display: none;
+}
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.chartmongo-container {
+  padding: 16.9px;
+  background-color: #f0f0f0;
+  left: 5px;
+  margin-right: 9.5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.side-menu li {
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex; /* Sử dụng flexbox */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+/* Căn giữa icon và tiêu đề */
+.side-menu li svg {
+  margin-right: 10px; /* Khoảng cách giữa icon và tiêu đề */
+}
+
+/* Thêm CSS cho tab được chọn */
+.side-menu li.active {
+  background-color: #555; /* Màu nền khi tab được chọn */
+}
+
+.side-menu li.active svg {
+  color: #fff; /* Màu của icon khi tab được chọn */
+}
+
+/* Thêm CSS cho nút đóng */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+  z-index: 1; /* Đảm bảo nút đóng hiển thị trên cùng */
+}
+
+.close-icon:hover {
+  color: #ddd; /* Màu khi di chuột qua */
+}
+
+/* Thêm padding cho phần sidebar để tránh nút đóng và nội dung bên trong chồng lên nhau */
+.side-menu {
+  padding-top: 30px; /* Thay đổi giá trị padding-top tùy theo kích thước của nút đóng */
+}
+
+/* Thêm CSS cho hình ảnh đại diện và thông tin cá nhân */
+.profile {
+  position: absolute; /* Đặt phần profile ở vị trí tuyệt đối */
+  bottom: 0;
+  width: 100%; /* Đảm bảo phần profile chiếm toàn bộ chiều rộng của sidebar */
+  padding: 10px;
+  border-top: 1px solid #ccc; /* Di chuyển phần profile xuống dưới cùng của sidebar */
+  box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước của phần tử */
+  background-color: #f8f8f8;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Đảm bảo hình ảnh được hiển thị dạng hình tròn */
+  margin-top: 5px;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.email {
+  color: #666;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.major {
+  color: #666;
+  margin-bottom: 35px;
+  margin-top: 5px;
+}
+
+.menu-icon.visible {
+  display: block;
+}
+
+.menu-icon.hidden {
+  display: none;
 }

@@ -6,12 +6,12 @@ import "./UserLogin.css";
 import "./Form.css"
 
 const schema = {
-  title: "ENGINE CONTROL INFORMATION",
+  title: "ENGINE SPEED CONTROL",
   type: "object",
   required: ["setpoint"],
   properties: {
     setpoint: { type: "number", 
-    title: "Enter Desired Engine Speed (RPM)" },
+    title: "ENTER ENGINE SPEED HERE (RPM)" },
   },
 };
 

@@ -1,78 +1,53 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Table } from 'react-bootstrap';
+import moment from 'moment';
 
 const DataTableFromAPI = () => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
 
-  const fetchData = async () => {
+  const getData = async () => {
     try {
       const response = await axios.get(
         "https://eastasia.azure.data.mongodb-api.com/app/application-0-hlnel/endpoint/getForm"
       );
       setData(response.data);
-      setError(null);
     } catch (error) {
       console.error("Lỗi khi lấy dữ liệu:", error);
-      setError("Không thể tải dữ liệu. Vui lòng thử lại sau.");
-    } finally {
-      setLoading(false);
     }
   };
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    getData();
+  });
 
-  const handleRefresh = () => {
-    setLoading(true);
-    fetchData();
+  const formatTime = (time) => {
+    return moment.utc(time).utcOffset(7).format('DD-MM-YYYY HH:mm:ss');
   };
-
+  
   return (
-    <div>
-      <h2>DATA LIST
-      <div>
-        <button onClick={handleRefresh} disabled={loading}>
-          {loading ? 'Refreshing...' : 'Refresh'}
-        </button>
-      </div>
-      </h2>
-      {loading ? (
-        <p>Loading...</p>
-      ) : (
-        <div className="table-responsive">
-          <table>
-            <thead>
-              <tr>
-                <th>No.</th>
-                <th>Setpoint</th>
-                <th>Error</th>
-                <th>Integral</th>
-                <th>Derivative</th>
-                <th>Control Value</th>
-                <th>Timestamp</th>
-              </tr>
-            </thead>
-            <tbody>
-              {data.map((item, index) => (
-                <tr key={index}>
-                  <td>{index + 1}</td>
-                  <td>{item.public.input.jsonData.setpoint}</td>
-                  <td>{item.public.output.jsonData.e_t}</td>
-                  <td>{item.public.output.jsonData.integral}</td>
-                  <td>{item.public.output.jsonData.derivative}</td>
-                  <td>{item.public.output.jsonData.controlValue}</td>
-                  <td>{item.public.input.jsonInfo.time}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      )}
-      {error && <p>{error}</p>}
-    </div>
+    <Table className="table-responsive">
+      <thead>
+        <tr>
+          <th scope="col">No.</th>
+          <th scope="col">Setpoint</th>
+          <th scope="col">Error</th>
+          <th scope="col">Speed</th>
+          <th scope="col">Timestamp</th>
+        </tr>
+      </thead>
+      <tbody>
+        {data.map((item, index) => (
+          <tr key={index}>
+            <td>{index + 1}</td>
+            <td>{item.public.input.jsonData.setpoint}</td>
+            <td>{item.public.output.jsonData.e_t}</td>
+            <td>{item.public.input.jsonData.rpm}</td>
+            <td>{formatTime(item.public.output.jsonInfo.ver)}</td>
+          </tr>
+        ))}
+      </tbody>
+    </Table>
   );
 };
 

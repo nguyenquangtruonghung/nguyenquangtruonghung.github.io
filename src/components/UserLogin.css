@@ -15,19 +15,6 @@ button {
   transition: background-color 0.3s;
 }
 
-/* Header styling */
-h2 {
-  font-size: 1.5em;
-  color: #333;
-  font-weight: bold;
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
-  display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 20px;
-}
-
 button:hover {
   background-color: #45a049;
 }
@@ -40,12 +27,22 @@ button:disabled {
 /* Table styling */
 .table-responsive {
   overflow-x: auto;
+  
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: auto;
+  margin-top: 80px;
 }
 
 th, td {
@@ -79,15 +76,4 @@ td:nth-child(even) {
     padding: 5px;
     font-size: 14px; /* Giảm kích thước font cho màn hình nhỏ */
   }
-}
-
-/* Error message styling */
-p {
-  text-align: center;
-}
-
-/* Loading message styling */
-.loading-message {
-  text-align: center;
-  font-style: italic;
 }
